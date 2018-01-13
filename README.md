@@ -3,6 +3,7 @@ drugie kolokwium wzorce projektowe
 
 includes:
 - null object
+- memento
 
 
 
@@ -16,3 +17,7 @@ Null Object Pattern
 	In Null Object pattern, we create an abstract class specifying various operations to be done, 
 	concrete classes extending this class and a null object class providing 
 	do nothing implemention of this class and will be used seemlessly where we need to check null value.
+	
+Memento
+
+	Need to restore an object back to its previous state (e.g. "undo" or "rollback" operations).
