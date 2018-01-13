@@ -1,13 +1,5 @@
-# dp2kol
-drugie kolokwium wzorce projektowe
-
-includes:
-- null object
-
-
-
-
-Null Object Pattern 
+/*
+	Null Object Pattern 
 	
 	In Null Object pattern, a null object replaces check of NULL object instance. 
 	Instead of putting if check for a null value, Null Object reflects a do nothing relationship. 
@@ -16,3 +8,22 @@ Null Object Pattern
 	In Null Object pattern, we create an abstract class specifying various operations to be done, 
 	concrete classes extending this class and a null object class providing 
 	do nothing implemention of this class and will be used seemlessly where we need to check null value.
+
+*/
+
+
+public class NullObjectDemo {
+
+	public static void main(String[] args) {
+
+		final String[] names = { "Rob", "Bob", "Julie", "Laura" };
+		
+		System.out.println("Customers: ");
+		
+		for (String s : names) {
+			System.out.println(CustomerFactory.getCustomer(s).getName());
+		}
+
+	}
+	
+}
