@@ -5,6 +5,7 @@ includes:
 - null object
 - memento
 - kompozyt ( + memento )
+- proxy
 
 
 
@@ -30,3 +31,12 @@ Composite
 	Application needs to manipulate a hierarchical collection of "primitive" and "composite" objects. 
 	Processing of a primitive object is handled one way, and processing of a composite object is handled 
 	differently. Having to query the "type" of each object before attempting to process it is not desirable.
+	
+	
+Proxy
+
+    Provide a surrogate or placeholder for another object to control access to it.
+    Use an extra level of indirection to support distributed, controlled, or intelligent access.
+    Add a wrapper and delegation to protect the real component from undue complexity.
+
+	
